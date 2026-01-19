@@ -1,3 +1,5 @@
+import 'dart:math';
+
 void main () {
   List<int> myFirstList = [1, 9, 1, 4, 8];
   List<String> mySecondList = ['apple', 'banana', 'orange'];
@@ -7,4 +9,13 @@ void main () {
   print(mySecondList);
   print(myThirdList);
   print(mySet);
+
+  var myRandomList = <int>[];
+  for (var i = 1; i <= 15; i++) {
+    myRandomList.add(10 + Random().nextInt(41));
+  }
+  print(myRandomList);
+  var mySecondSet = <int>{...myRandomList};
+  print(mySecondSet);
+  
 }

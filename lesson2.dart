@@ -14,8 +14,11 @@ void main() {
   print(date);
 
   dynamic e;
+  var myText = 'Hello, donkey!';
   e = a;
   print(e);
   e = c;
+  print(e);
+  e = myText;
   print(e);
 }
